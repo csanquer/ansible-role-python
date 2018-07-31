@@ -7,6 +7,7 @@
       - python-virtualenv
       - python-setuptools
       - python-six
+      - python-pip
 
 - name: install python 3
   apt: name={{ item }} state=present
@@ -17,10 +18,4 @@
       - python3-virtualenv
       - python3-setuptools
       - python3-six
-
-- name: install pip for python 2
-  easy_install: name=pip executable=easy_install-2.7
-
-- name: install pip for python 3
-  easy_install: name=pip executable=easy_install3
-  when: python3_enabled
+      - python3-pip
