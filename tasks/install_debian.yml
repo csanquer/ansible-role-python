@@ -20,4 +20,4 @@
       - python3-six
       - python3-pip
     state: present
-  when: python3_enabled
+  when: python3_enabled|bool

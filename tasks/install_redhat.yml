@@ -17,4 +17,4 @@
       - python34-devel
       - python34-setuptools
     state: present
-  when: python3_enabled
+  when: python3_enabled|bool
