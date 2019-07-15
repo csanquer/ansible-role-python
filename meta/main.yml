@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Charles Sanquer
-  description:
+  description: install python 2 and 3 and pip packages
   min_ansible_version: 2.4
   license: LGPLv3
   github_branch: master
