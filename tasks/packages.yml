@@ -9,6 +9,7 @@
     virtualenv: "{{ item.virtualenv|default(omit) }}"
     virtualenv_command: "{{ item.virtualenv_command|default(omit) }}"
     virtualenv_python: "{{ item.virtualenv_python|default(omit) }}"
+  when: python2_enabled|bool
   loop: "{{ python_pip2_packages }}"
 
 - name: install pip python 3 packages

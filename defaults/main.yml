@@ -1,5 +1,6 @@
 ---
 python3_enabled: true
+python2_enabled: true
 python_2_pip_bin: pip2
 python_3_pip_bin: pip3
 python_pip2_packages: []

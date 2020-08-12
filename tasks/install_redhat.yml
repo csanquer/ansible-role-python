@@ -8,6 +8,7 @@
       - python-setuptools
       - python-virtualenv
     state: present
+  when: python2_enabled|bool
 
 - name: install python 3
   yum:
